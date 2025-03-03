@@ -53,4 +53,20 @@ fun main() {
 
     println(simpleArray[0].toString()) //10
     println(twoDArray[0][0].toString()) //20
+
+    //Invariant
+
+    val arrayOfString: Array<String> = arrayOf("v1", "v2")
+    //var arrayOfAny : Array<Any> = arrayOfString
+    var arrayOfAny2: Array<Any> = arrayOf("v1", "v2")
+
+    //Empty Array
+
+    var emptyArray = emptyArray<String>()
+    var emptyArray2: Array<String> = emptyArray()
+
+    emptyArray += ""
+    emptyArray2 = arrayOf("one", "two")
+    emptyArray[0] = "New element"
+
 }
