@@ -12,4 +12,18 @@ fun main() {
 
     val studentNames = arrayOf("Ahmet", "Ayşe", "Aslı", "Veli")
     val mixedArray = arrayOf<Any>(13, "Ahmet", 'C', false) // array of Any includes boxed type
+
+
+    // Add new element to Array
+    val arrayOfNulls = arrayOfNulls<String>(4)
+    println(arrayOfNulls.joinToString { "5" })
+    val emptyArray0 = emptyArray<String>() // <> interface
+    //emptyArray[5]= "New element" doesn't work
+
+    var citiesArray = arrayOf("istanbul", "konya")
+    //println(citiesArray)
+    // citiesArray += "Sivas"
+    var newCitiesArray = citiesArray + "Ankara"
+    println(newCitiesArray.joinToString())
+
 }
