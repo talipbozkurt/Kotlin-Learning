@@ -22,4 +22,13 @@ fun main() {
     println("$firstCharacterOfName $firstCharacterOfName2 $lastCharacterOfName  $lastCharacterOfName2")
 
 
+    val numberValue: String = "value" + (4 + 2 + 8) // value14 , string ,because of the + operator
+    //val numberValue2 : String = (4+2+8) + "value"  //doesn't work
+    // val numberValue3 : String = (4+2+8).plus("value") //doesn' work
+
+    println("numberValue : " + numberValue)  // bad practice / java habit
+    println("numberValue : $numberValue") // templete usage
+    println("numberValue lenght : ${numberValue.length}")// using property in string
+
+
 }
