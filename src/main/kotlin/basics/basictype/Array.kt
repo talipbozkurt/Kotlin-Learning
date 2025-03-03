@@ -80,4 +80,30 @@ fun main() {
     printAllStrings("a", "b", "c", "d")
     printAllStrings("a", "b", *lettersArray) //Spread operator
 
+
+    // equals (==) operator usage in array
+
+    val array1 = intArrayOf(1, 2, 3)
+    val array2 = intArrayOf(1, 2, 3)
+
+    if (array1 == array2) {
+        println("true1")
+    } else {
+        println("\nfalse1")
+    }
+    val array5 = array1
+    val array6 = array1
+
+    if (array5 == array6) {
+        println(true)
+    } else {
+        println(false)
+    }
+
+    val name = "Mehmet"
+    val name1 = "Mehmet"
+
+    if (name1 === name) {
+        println("true because of string interpol")
+
 }
