@@ -26,4 +26,11 @@ fun main() {
     var newCitiesArray = citiesArray + "Ankara"
     println(newCitiesArray.joinToString())
 
+    // Link between Array and String
+    val firstCharacterOfCountries = CharArray(4)
+    firstCharacterOfCountries[0] = 't'
+    firstCharacterOfCountries.set(1, 'a')
+    val firstcc = "ta"
+    println(firstcc[0])
+
 }
