@@ -3,7 +3,7 @@ package org.example.basics.basictype
 
 fun main() {
     val x: Int = 10 // primitive type | unboxed
-    val x2: Int? = 10 // object representing a primitive type  | boxed
+    val x2: Int = 10 // object representing a primitive type  | boxed
 
     // Array Types
 
@@ -32,5 +32,25 @@ fun main() {
     firstCharacterOfCountries.set(1, 'a')
     val firstcc = "ta"
     println(firstcc[0])
+   // Multi dimension Arrays
 
+    val twoDArray = Array(2) { Array<Int>(2) { 0 } }
+    println(twoDArray.contentDeepToString())
+    // [0 , 0] , [0 , 0]
+
+    val threeDArray = Array(3) { Array(3) { Array(3) { 0 } } }
+    println(threeDArray.contentDeepToString())
+
+    // [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    // [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    // [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+    val simpleArray = arrayOf(1, 2, 3)
+    //accesses to element and modified it
+    simpleArray[0] = 10
+    twoDArray[0][0] = 20
+
+
+    println(simpleArray[0].toString()) //10
+    println(twoDArray[0][0].toString()) //20
 }
