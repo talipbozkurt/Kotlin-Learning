@@ -105,5 +105,28 @@ fun main() {
 
     if (name1 === name) {
         println("true because of string interpol")
+    }
 
+    // .contentEquals is used to compare one dimensional arrays
+
+    println(array1.contentEquals(array2)) //true
+    // .contentDeepEquals is used to compare multi dimension arrays
+    val array3 = arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))
+    val array4 = arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))
+    println(array3.contentDeepEquals(array4)) //true
+
+    // sum() is  used for addition
+
+    val sumArray = arrayOf(1,2,3)
+    println(sumArray.sum())
+
+    val shuffledArray = arrayOf(1,2,3)
+    shuffledArray.shuffle()
+    println(shuffledArray.joinToString())
+
+    shuffledArray.shuffle()
+    println(shuffledArray.joinToString())
+
+
+    // Arrays can be converted Lists (.toList) , Map (.toMap) and Sets (.toSet)
 }
