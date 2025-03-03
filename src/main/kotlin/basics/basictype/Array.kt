@@ -69,4 +69,15 @@ fun main() {
     emptyArray2 = arrayOf("one", "two")
     emptyArray[0] = "New element"
 
+    // vararg usage with array
+
+    fun printAllStrings(vararg strings: String) {
+        for (string in strings)
+            print(string)
+    }
+
+    val lettersArray = arrayOf("c", "d")
+    printAllStrings("a", "b", "c", "d")
+    printAllStrings("a", "b", *lettersArray) //Spread operator
+
 }
