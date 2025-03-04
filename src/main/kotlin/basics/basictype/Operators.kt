@@ -58,7 +58,22 @@ fun main() {
     println(b.compareTo(a))  // 1
     println(a.compareTo(c))  // 0
 
+    val numb1 : Int? = 5
+    val numb2 : Int? = 2
 
+    //println(numb1+numb2) // + operator is not used with nullable variable
+    println(numb1?.plus(numb2 ?: 0)) // correct way to use the .plus func. with nullable variable
+
+    // The way to use nullable variables with the + operator
+
+    if (numb1 == null){
+        return
+    }
+    if (numb2 == null){
+        return
+    }
+
+    println("Sum = ${numb1+numb2}")
 
 
 }
