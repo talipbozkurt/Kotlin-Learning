@@ -32,4 +32,24 @@ fun main() {
     println("${numberTwo % numberOne}")
     println(numberTwo.rem(numberOne))
 
+    print("Enter final grade")
+    val grade = readln().toInt()
+
+    val charNote = if (grade == 100) {
+        "$grade = AA"
+    } else if (grade <= 99 && grade >= 80) {
+        "$grade == BB"
+    } else if (grade <= 79 && grade >= 50) {
+        "$grade == CC"
+    } else if (grade <= 49 && grade >= 20) {
+        "$grade == DD"
+    } else if (grade <= 19 && grade >= 0) {
+        "$grade == FF"
+    } else {
+        "$grade = Bulunamadı !!"
+    }
+    println(charNote)
+
+
+
 }
