@@ -51,5 +51,14 @@ fun main() {
     println(charNote)
 
 
+    val a = 12
+    val b = 18
+    val c = 12
+    println(a.compareTo(b))  // -1
+    println(b.compareTo(a))  // 1
+    println(a.compareTo(c))  // 0
+
+
+
 
 }
