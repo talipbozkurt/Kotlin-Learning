@@ -80,4 +80,10 @@ fun main() {
     val trFormat = String.format(localeTR, " format of TR : %,.2f", numb) // Değişken adı düzeltildi
     println(trFormat)
 
+val a = 20
+    println("The price is $a$.")  //  The price is 20$.
+    println("The price is $$a.")  //  The price is $20.
+    println("The price is \$a.")  //  The price is $a.
+    println("The price is \$$a.") //  The price is $20
+
 }
