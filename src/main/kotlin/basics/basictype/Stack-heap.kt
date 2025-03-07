@@ -20,4 +20,9 @@ fun main() {
     nullableSayi1[0] = 20
 
     println("nullableSayi1 = ${nullableSayi1[0]}  nullableSayi2 = ${nullableSayi2[0]}") //nullableSayi1 = 20  nullableSayi2 = 20
+
+    val nullableType : Boolean? = true
+
+    //if(nullableType){} type mismatch
+    if(nullableType==true){}
 }
