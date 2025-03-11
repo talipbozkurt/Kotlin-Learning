@@ -58,22 +58,43 @@ fun main() {
     println(b.compareTo(a))  // 1
     println(a.compareTo(c))  // 0
 
-    val numb1 : Int? = 5
-    val numb2 : Int? = 2
+    val numb1: Int = 5
+    val numb2: Int = 2
 
     //println(numb1+numb2) // + operator is not used with nullable variable
-    println(numb1?.plus(numb2 ?: 0)) // correct way to use the .plus func. with nullable variable
+    println(numb1.plus(numb2)) // correct way to use the .plus func. with nullable variable
 
     // The way to use nullable variables with the + operator
 
-    if (numb1 == null){
+    if (numb1 == null) {
         return
     }
-    if (numb2 == null){
+    if (numb2 == null) {
         return
     }
 
-    println("Sum = ${numb1+numb2}")
+    println("Sum = ${numb1 + numb2}")
+
+    var numbOne = 10
+    var numbTwo = 5
+    var flag = true
+
+    println("+a : " + +numbOne) //  +a :10
+    println("-b : " + -numbTwo) // -b : -5
+    println("++a : " + +numbOne) // ++a : 10
+    println("a++ : " + ++numbOne) // a++ : 11
+    println("a : " + numbOne) // a : 11
+    println("--b : " + --numbTwo) // --b : 4
+    println("!flag : " + !flag) // !flag : false
+    println("!falg : " + flag.not()) // !flag : false
+
+    /*
+  +a   a.unaryplus()
+  -a   a.unaryMinus()
+ ++a   a.inc()  a = a+1
+ --a   a.dec()  a = a-1
+  !a   a.not()
+     */
 
 
 }
