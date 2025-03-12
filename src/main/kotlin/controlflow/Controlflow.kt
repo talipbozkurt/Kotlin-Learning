@@ -1,5 +1,7 @@
 package org.example.controlflow
 
+import java.util.*
+
 fun main() {
 
     print("Are you student ? ")
@@ -43,6 +45,35 @@ fun main() {
         println("nullableVariable true")
     } else {
         println("nullableVariable false")
+    }
+
+    // when usage
+
+    val countryCode = readln()
+    when (countryCode.lowercase(Locale.getDefault())) {
+        "tr", "az" -> println("Turk citizen")
+        "ar" -> println("Arab citizen")
+        "fr" -> println("France citizen")
+        "ru" -> println("Russian citizen")
+        "uk" -> println("United Kingdom citizen")
+    }
+
+    // is usage with when
+    val phonenumber: Long = 161616161616
+    when (phonenumber) {
+        is Long -> {
+            println("Long value")
+        }
+
+        !is Long -> {
+            println("Not a long value")
+        }
+    }
+   // in usage with when
+
+    val number = readln().toInt()
+    when (number) {
+        in 0..9 -> println("number is range of the number")
     }
 }
 
