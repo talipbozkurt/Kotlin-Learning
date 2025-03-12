@@ -27,6 +27,23 @@ fun main() {
     if (10 == 10L.toInt()) {
         println("true")
     }
+
+    // nullable and normal variable usage for if statment
+
+    val nullableVariable: Boolean = true
+    val variable = false
+
+    if (variable) {
+        println("variable true")
+    } else {
+        println("variable false")
+    }
+
+    if (nullableVariable == true) {
+        println("nullableVariable true")
+    } else {
+        println("nullableVariable false")
+    }
 }
 
 
